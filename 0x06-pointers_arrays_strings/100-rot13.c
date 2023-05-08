@@ -19,6 +19,7 @@ char *rot13(char *s)
 			if (s1[j] == s[i])
 			{
 				s[i] = s2[j];
+				break;
 			}
 			j++;
 		}
