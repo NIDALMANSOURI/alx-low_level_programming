@@ -12,7 +12,7 @@
 typedef struct token
 {
 	char *token;
-	void(*f)(char *, va_list);
+	void (*f)(char *, va_list);
 } token_t;
 
 int sum_them_all(const unsigned int n, ...);
