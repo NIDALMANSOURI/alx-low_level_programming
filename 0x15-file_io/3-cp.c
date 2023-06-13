@@ -23,7 +23,7 @@ int main(int ac, char **av)
 	from_f = open(av[1], O_RDONLY);
 	if (from_f == -1)
 		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
-	to_f = open(av[2], O_WRONLY | O_CREAT | o_TRUNC, PERMISSIONS);
+	to_f = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (to_f == -1)
 		dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 	while ((b = read(from_f, buf, READ_BUF_SIZE)) > 0)
